@@ -1,2 +1,69 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+header{
+    height: 80px;
+}
+
+.navbar{
+    background-color: #4682B4;
+    padding: 10px;
+}
+
+body{
+    background-color: white;
+}
+
+.apptitle{
+    color: white;
+    
+}
+
+.navbar-right{
+    color: white;
+    margin: -50px 50px 0 0;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    left: 100px;
+    padding: 0;
+}
+
+.carousel {
+    top: 100px;
+}
+
+#carousel-example-generic{
+    width: 100%;
+}
+
+.carousel-inner{
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.item{ 
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    
+    height: 100px;
+    width: 100%;
+}
+
+.carousel-control {
+    height: 300px;
+}
+
+.left {
+    margin: 0 -10px;
+}
+
+.right {
+    margin: 0 0px;
+}
