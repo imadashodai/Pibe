@@ -2,11 +2,11 @@
     <div class="container">
         <nav>
             <div class="apptitle">
-            <h2>Pibe</h2>
+            <h2><%= link_to "Pibe", root_path, :style => "color:white" %></h2>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><%= link_to "sign in", "#", :style => "color:white" %></li>
-                <li><%= link_to "sign up", "#", :style => "color:white" %></li>
+                <li><%= link_to "sign up", signup_path, :style => "color:white" %></li>
             </ul>
         </nav>
     </div>
