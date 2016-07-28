@@ -33,6 +33,12 @@ class UsersController < ApplicationController
     end
   end
   
+  def member
+    @team = Team.find(params[:id])
+    @user = User.find_by(team_id: @team.id)
+    @member = User.find_by(id: @user.team_id)
+  end
+  
   private
   
   def user_params
