@@ -56,6 +56,10 @@ header{
     background-color: #00CC99;
 }
 
+.pibe_img{
+    max-width: 250px;
+}
+
 .carousel {
 
 }
@@ -155,13 +159,22 @@ input {
     
 }
 
-/*login*/
-.login{
+/*teams*/
+.all_teams{
     margin: 100px;
 }
 
+
+/*login*/
+.login{
+    margin: 200px;
+    border-color: blue;
+}
+
 .alert{
-    top: 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 /*fooer*/
@@ -174,4 +187,9 @@ input {
     background-color: #006699;
     text-align: center;
     color: white;
+}
+
+/*edit*/
+.edit_area{
+    margin: -700px 100px 0 150px;
 }

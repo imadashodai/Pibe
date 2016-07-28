@@ -1,4 +1,9 @@
-<br><br><br>
-<% @teams.each do |teams| %>
-    <%= teams.name%>
-<% end %>
+<div class="all_teams">
+    <ul class="teams_list">
+        <% @teams.each do |teams| %>
+        <li>
+            <%= teams.name %>
+        </li>
+        <% end %>
+    </ul>
+</div>
