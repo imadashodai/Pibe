@@ -2,6 +2,15 @@
 @import "bootstrap";
 
 /*home*/
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
 header{
     position: fixed !important;
     position: abusolute;
@@ -16,9 +25,6 @@ header{
     padding: 10px;
 }
 
-body{
-    background-color: white;
-}
 
 .apptitle{
     color: white;

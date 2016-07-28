@@ -1,9 +1,12 @@
 class TeamsController < ApplicationController
-    #before_action :logged_in_user, only: [:create]
+    before_action :logged_in_user, only: [:create]
+    
+    def index
+        @teams = Team.all
+    end
     
     def show
         @team = Team.find(params[:id])
-        @teams = @team.all
     end
     
     def new
@@ -14,7 +17,7 @@ class TeamsController < ApplicationController
         @team = Team.new(team_params)
         if @team.save
             flash[:success] = "create team!"
-            redirect_to team_path
+            redirect_to root_path
         else
             redirect_to teams_path
         end
