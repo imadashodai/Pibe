@@ -48,3 +48,5 @@ end
 
 gem 'carrierwave'
 gem 'rmagick'
+
+gem 'cloudinary'
