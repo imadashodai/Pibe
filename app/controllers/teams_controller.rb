@@ -7,7 +7,7 @@ class TeamsController < ApplicationController
     
     def show
         @team = Team.find(params[:id])
-        @member = User.find_by(team_id: @team.id).all
+        @users = User.where(team_id: @team.id)
     end
     
     def new

@@ -7,6 +7,8 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new
+    
+    @teams = Team.all
   end
   
   def create
@@ -42,6 +44,6 @@ class UsersController < ApplicationController
   private
   
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :team_id)
   end
 end

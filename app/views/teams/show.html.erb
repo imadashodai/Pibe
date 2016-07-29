@@ -1,7 +1,14 @@
-<br><br><br>
-<p>show team</p>
-<%= @team.name %>
-
-<% @member.each do |user| %>
-    <%= @member.name %>
-<% end %>
+<div class="myteam">
+<div class="team_name">
+    <%= @team.name %>
+</div>
+<div class="members">
+    <ul>
+        <% @users.each do |user| %>
+            <li>
+                <%= user.name %>
+            </li>
+        <% end %>
+    <ul>
+</div>
+</div>
