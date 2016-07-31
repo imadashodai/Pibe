@@ -1,34 +1,31 @@
 <div class="edit_page">
-
-<%= render "users/show" %>
-<div class="edit_area">
+    <%= render "users/show" %>
+    <div class="edit_area">
+        <%= form_for(@user) do |f| %>
+            <%= render 'shared/error_messages', object: f.object %>
     
-            <%= form_for(@user) do |f| %>
-                <%= render 'shared/error_messages', object: f.object %>
-
-                <%= image_tag @user.avatar.url if @user.avatar %>
-                <%= f.label :avatar %>
-                <%= f.file_field :avatar %>
-                <%= f.submit %>
+            <%= image_tag @user.avatar.url if @user.avatar %>
+            <%= f.label :avatar %>
+            <%= f.file_field :avatar %>
+            <%= f.submit %>
+        
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
             
-                <%= f.label :name %>
-                <%= f.text_field :name, class: 'form-control' %>
-                
-                <%= f.label :email %>
-                <%= f.email_field :email, class: 'form-control' %>
-                
-                
-                <%= f.label :team_id %>
-                <%= f.collection_select :team_id, Team.all, :id, :name, :include_blanck => true %>
+            <%= f.label :email %>
+            <%= f.email_field :email, class: 'form-control' %>
+            
+            
+            <%= f.label :team_id %>
+            <%= f.collection_select :team_id, Team.all, :id, :name, :include_blanck => true %>
     
-                <%= f.label :password %>
-                <%= f.password_field :password, class: 'form-control' %>
-                
-                <%= f.label :password_confirmation, "Confirmation" %>
-                <%= f.password_field :password_confirmation, class: 'form-control' %>
-                
-                <%= f.submit "Update", class: "btn btn-large btn-primary" %>
-            <% end %>
-       
-</div>
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'form-control' %>
+            
+            <%= f.label :password_confirmation, "Confirmation" %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+            
+            <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+        <% end %>
+    </div>
 </div>

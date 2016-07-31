@@ -195,13 +195,21 @@ input {
 }
 
 .team_link{
-    margin-top: -500px;
+    margin: 0;
 }
-
 
 /*teams*/
 .all_teams{
     margin: 100px;
+}
+
+.team_profile{
+    margin-top: 50px;
+}
+
+/*members*/
+.members{
+    margin: -50px 0 0 200px;
 }
 
 
