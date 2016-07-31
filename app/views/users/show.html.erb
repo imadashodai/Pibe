@@ -1,3 +1,9 @@
 <div class="sidebar">
     <%= render "users/show" %>
 </div>
+<div class="userinfo">
+    <ul>
+        <li>メールアドレス:<%= @user.email %></li>
+        <li>所属チーム:<%= @team.name %></li>
+    <ul>
+</div>

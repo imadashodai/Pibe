@@ -1,16 +1,15 @@
-<div class="team_profile">
+<div class="myteam">
     <%#= gravatar_for @team %> <!--ここにチームのアイコンを入れる-->
     <div class="teamname">
         <%= @team.name %>
     </div>
-    <%= render "users/sidevar" %>
 </div>
 
 <div class="members">
     <ul>
         <% @team_users.each do |user| %>
             <li>
-                <%= link_to user.name, user_path %>
+                <%= user.name %>
             </li>
         <% end %>
     <ul>
