@@ -31,16 +31,25 @@ header{
     width: 50px;
     margin-right: 0;
     padding: 0;
-    font-size: 25px;
+    font-size: 30px;
     font-family: cursive;
 }
 
 .navbar-right{
     color: white;
-    margin: -40px 50px 0 0;
+    margin: -25px 20px 0 0;
     padding: 0;
+    font-size: 15px;
 }
 
+.navbar-right li{
+    margin: 0 10px;
+}
+
+.subtitle{
+    margin: -30px 0 0 80px;
+    color: white;
+}
 
 .container{
     height: 100%;
@@ -49,43 +58,67 @@ header{
     padding: 0;
 }
 
+
 .homepage{
     width: 100%;
-    height: 450px;
-    margin-top: 50px;
-    background-color: #00CC99;
+    height: 100%;
+    background-color: #868A08;
 }
 
 .pibe_img{
-    max-width: 250px;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 800px;
+}
+
+.img_text{
+    color: white;
+    margin: -400px 0 0 200px;
+    font-size: 80px;
+    font-family: cursive;
+}
+
+.how_to{
+    margin-top: 280px;
+    height: 500px;
+    
+    img{
+        height: 100%;
+    }
 }
 
 .carousel {
-
+     background-color: #00CC99;
+     margin: 0;
 }
 
 #carousel-example-generic{
     width: 100%;
 }
 
+.carousel-indicators{
+    margin-bottom: 40px;
+}
+
 .carousel-inner{
     width: 100%;
-    margin: 0px 0px;
+    margin: 0;
+    bottom: 0;
 }
 
 .item{ 
-    height: 100%;
+    height: 500px;
     width: 100%;
-}
-
-img {
     
-    height: 100px;
-    width: 100%;
+    
 }
 
-.carousel-control {
-    height: 380px;
+.carousel-caption{
+    margin-bottom: 20px;
 }
 
 .left {
@@ -141,6 +174,8 @@ input {
 
 /*show.html*/
 .profile{
+    position: fixed !important;
+    position: abusolute;
     height: 100%;
     width: 15%;
     margin: 0;
@@ -187,16 +222,26 @@ input {
     position: fixed !important;
     position: abusolute;
     bottom: 0;
-    height: 50px;
+    height: 40px;
     width: 100%;
     background-color: #006699;
     text-align: center;
     color: white;
 }
 
+.copyright{
+    padding-top: 10px;
+    bottom: 0;
+}
+
 /*edit*/
+.edit_page{
+    width: 100%;
+}
+
 .edit_area{
-    margin: -700px 100px 0 150px;
+    margin-left: 300px;
+    margin-right: 100px;
 }
 
 /*myteam*/
