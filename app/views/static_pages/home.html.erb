@@ -8,10 +8,6 @@
   </div>
 </div>
 
-<div class="how_to">
-  <%= image_tag("start.jpg")%>
-</div>
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -23,19 +19,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag("cloud.jpg")%>
+      <%= image_tag("manage.png")%>
       <div class="carousel-caption">
         <P>写真</p>
       </div>
     </div>
     <div class="item">
-      <%= image_tag("manage.jpg")%>
+      <%= image_tag("manage.png")%>
       <div class="carousel-caption">
         <p>写真2</p>
       </div>
     </div>
     <div class="item">
-      <%= image_tag("manage.jpg")%>
+      <%= image_tag("manage.png")%>
       <div class="carousel-caption">
         <p>写真3</p>
       </div>
@@ -51,4 +47,11 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+
+<div class="how_to">
+  <%= image_tag("start.jpg")%>
+  <div class="link_signup">
+    <%= link_to "まずはユーザー登録！", signup_path %>
+  </div>
 </div>

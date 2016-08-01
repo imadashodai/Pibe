@@ -1,0 +1,16 @@
+<div class="edit_page">
+    <div class="edit_area">
+    <%= form_for(@team) do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+    
+        <%= image_tag @team.avatar.url if @team.avatar %>
+        <%= f.label :avatar %>
+        <%= f.file_field :avatar %>
+        
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control' %>
+                    
+        <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+    <% end %>
+    </div>
+</div>

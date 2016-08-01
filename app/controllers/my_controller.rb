@@ -6,4 +6,9 @@ class MyController < ApplicationController
         @team = @user.team
         @team_users = @team.users
     end
+    
+    def edit
+        @user = current_user
+        @team = @user.team
+    end
 end

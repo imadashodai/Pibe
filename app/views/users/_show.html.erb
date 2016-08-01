@@ -1,5 +1,6 @@
 <div class="profile">
-    <%= gravatar_for @user %>
+    <%= image_tag @user.avatar.url %>
+
     <div class="username">
         <%= @user.name %>
     </div>

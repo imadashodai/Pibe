@@ -1,5 +1,6 @@
 <%= render "users/show" %>
 <div class="myteam">
+    <%= image_tag @team.avatar.url %>
     <div class="team_name">
         <%= @team.name %>
     </div>
@@ -7,9 +8,10 @@
         <ul>
             <% @users.each do |user| %>
                 <li>
-                    <%= user.name %>
+                    <%= link_to user.name, user_path(user) %>
                 </li>
             <% end %>
         <ul>
     </div>
+    <%= link_to "編集", "#"%>
 </div>

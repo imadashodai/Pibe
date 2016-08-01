@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-    before_action :logged_in_user, only: [:create]
+    before_action :logged_in_user, only: [:create, :edit]
     
     def index
         @teams = Team.all
@@ -8,6 +8,7 @@ class TeamsController < ApplicationController
     def show
         @team = Team.find(params[:id])
         @users = User.where(team_id: @team.id)
+        @user = current_user
     end
     
     def new
@@ -23,9 +24,21 @@ class TeamsController < ApplicationController
             redirect_to teams_path
         end
     end
+
+    
+    def update
+        @user = current_user
+        @team = @user.team
+        if @team.update(team_params)
+            #flash[:success] = '更新されました'
+            redirect_to team_path
+        else
+            render 'edit'
+        end
+    end
     
     private
     def team_params
-        params.require(:team).permit(:name)
+        params.require(:team).permit(:avatar,:name)
     end
 end
