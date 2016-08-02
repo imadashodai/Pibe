@@ -3,7 +3,8 @@
     <ul class="teams_list">
         <% @teams.each do |teams| %>
         <li>
-            <%= teams.name %>
+        <%= teams.name %><br>
+        <%= image_tag teams.avatar.url %>
         </li>
         <% end %>
     </ul>

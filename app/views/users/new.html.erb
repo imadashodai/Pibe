@@ -1,6 +1,6 @@
 <div class="signup_form">
     <div class="signup_label">
-    <p>サインアップ</p>
+    <h1>サインアップ</h1>
     </div>
     
     <div class="row">
@@ -8,22 +8,22 @@
             <%= form_for(@user) do |f| %>
             <%= render 'shared/error_messages', object: f.object %>
             
-            <%= f.label :name %>
+            <%= f.label :name, "名前" %>
             <%= f.text_field :name, class: 'form-control' %>
             
-            <%= f.label :email %>
+            <%= f.label :email, "メールアドレス" %>
             <%= f.text_field :email, class: 'form-control' %>
             
-            <%= f.label :team_id %>
+            <%= f.label :team_id, "チームを選択" %>
             <%= f.collection_select :team_id, Team.all, :id, :name, :include_blanck => true %>
             
-            <%= f.label :password %>
+            <%= f.label :password, "パスワード" %>
             <%= f.password_field :password, class: 'form-control' %>
             
-            <%= f.label :passrord_confirmation, "Confirmation" %>
+            <%= f.label :passrord_confirmation, "パスワード再入力" %>
             <%= f.password_field :passrord_confirmation, class: 'form-control' %>
             
-            <%= f.submit "Create my account", class: "btn-large btn-primary" %>
+            <%= f.submit "登録してPibeを始める！", class: "btn-large btn-primary" %>
             <% end %>
         </div>
     </div>

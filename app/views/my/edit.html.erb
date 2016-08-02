@@ -1,16 +1,17 @@
-<div class="edit_page">
-    <div class="edit_area">
+<div class="sidebar">
+    <%= render "my/show" %>
+</div>
+<div class="edit_area">
     <%= form_for(@team) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
     
         <%= image_tag @team.avatar.url if @team.avatar %>
-        <%= f.label :avatar %>
+        <%= f.label :avatar, "チーム画像" %>
         <%= f.file_field :avatar %>
         
-        <%= f.label :name %>
+        <%= f.label :name, "チーム名" %>
         <%= f.text_field :name, class: 'form-control' %>
                     
-        <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+        <%= f.submit "チーム情報を更新！", class: "btn btn-large btn-primary" %>
     <% end %>
-    </div>
 </div>

@@ -1,31 +1,29 @@
-<div class="edit_page">
-    <%= render "users/show" %>
-    <div class="edit_area">
-        <%= form_for(@user) do |f| %>
-            <%= render 'shared/error_messages', object: f.object %>
-    
-            <%= image_tag @user.avatar.url if @user.avatar %>
-            <%= f.label :avatar %>
-            <%= f.file_field :avatar %>
-            <%= f.submit %>
+<%= render "users/show" %>
+
+<div class="edit_area">
+    <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
         
-            <%= f.label :name %>
-            <%= f.text_field :name, class: 'form-control' %>
-            
-            <%= f.label :email %>
-            <%= f.email_field :email, class: 'form-control' %>
-            
-            
-            <%= f.label :team_id %>
-            <%= f.collection_select :team_id, Team.all, :id, :name, :include_blanck => true %>
+        <%= f.label :avatar, "プロフィール画像" %><br>
+        <%= image_tag @user.avatar.url if @user.avatar %>
+        <%= f.file_field :avatar %>
     
-            <%= f.label :password %>
-            <%= f.password_field :password, class: 'form-control' %>
-            
-            <%= f.label :password_confirmation, "Confirmation" %>
-            <%= f.password_field :password_confirmation, class: 'form-control' %>
-            
-            <%= f.submit "Update", class: "btn btn-large btn-primary" %>
-        <% end %>
-    </div>
+        <%= f.label :name, "名前" %>
+        <%= f.text_field :name, class: 'form-control' %>
+        
+        <%= f.label :email, "メールアドレス" %>
+        <%= f.email_field :email, class: 'form-control' %>
+        
+        
+        <%= f.label :team_id, "チーム" %>
+        <%= f.collection_select :team_id, Team.all, :id, :name, :include_blanck => true %>
+
+        <%= f.label :password, "パスワード" %>
+        <%= f.password_field :password, class: 'form-control' %>
+        
+        <%= f.label :password_confirmation, "パスワード再入力" %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+        
+        <%= f.submit "ユーザー情報を更新！", class: "btn btn-large btn-primary" %>
+    <% end %>
 </div>
