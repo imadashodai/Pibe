@@ -1,41 +1,35 @@
 <header class="navbar navbar-default navbar-fixed-top navbar-custom affix-top">
-    <div class="nav_container">
+    <div class="container">
         <nav>
-            <div class="apptitle">
-                <% if logged_in? %>
-                    <%= link_to "Pibe", "#", :style => "color:white" %>
-                <% else %>
-                    <%= link_to "Pibe", root_path, :style => "color:white" %>
-                <% end %>
-            </div>
-            
-            <ul class="nav navbar-nav navbar-right">
-                <% if logged_in? %>
-                    <li>
-                        <span class="glyphicon glyphicon-user" aria-hidden="true">
-                            <%= link_to "ログアウト", logout_path, method: "delete", :style => "color:white" %>
-                        </span>
-                    </li>
-                <% else %>
-                    <li >
-                        <span class="glyphicon glyphicon-list" aria-hidden="true">
-                            <%= link_to "チーム一覧", teams_path, :style => "color:white" %>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok" aria-hidden="true">
-                            <%= link_to "サインアップ", signup_path, :style => "color:white" %>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-user" aria-hidden="true">
-                            <%= link_to "ログイン", login_path, :style => "color:white" %>
-                        </span>
-                    </li>
-                <% end %>
-            </ul>
-            <div class="subtitle">
-                <p>help your management</p>
+            <div class="row">
+                <div class="apptitle">
+                    <% if logged_in? %>
+                        <%= link_to "Pibe", "#", :style => "color:white" %>
+                    <% else %>
+                        <%= link_to "Pibe", root_path, :style => "color:white" %>
+                    <% end %>
+                    
+                </div>
+                <div class="subtitle">
+                        <p>help your management</p>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <% if logged_in? %>
+                        <li>
+                            <%= link_to "ログアウト", logout_path, method: "delete", :class => "glyphicon glyphicon-user", :style => "color:white" %>
+                        </li>
+                    <% else %>
+                        <li >
+                            <%= link_to "チーム一覧", teams_path, :class => "glyphicon glyphicon-list", :style => "color:white" %>
+                        </li>
+                        <li>
+                            <%= link_to "サインアップ", signup_path, :class => "glyphicon glyphicon-ok", :style => "color:white" %>
+                        </li>
+                        <li>
+                            <%= link_to "ログイン", login_path, :class => "glyphicon glyphicon-user", :style => "color:white" %>
+                        </li>
+                    <% end %>
+                </ul>
             </div>
         </nav>
     </div>
