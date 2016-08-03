@@ -33,7 +33,7 @@ class TeamsController < ApplicationController
         @team = @user.team
         if @team.update(team_params)
             #flash[:success] = '更新されました'
-            redirect_to team_path
+            redirect_to my_path(@team)
         else
             render 'edit'
         end

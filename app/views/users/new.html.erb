@@ -8,6 +8,10 @@
             <%= form_for(@user) do |f| %>
             <%= render 'shared/error_messages', object: f.object %>
             
+            <%= f.label :avatar, "プロフィール画像" %><br>
+            <%= image_tag @user.avatar.url if @user.avatar %>
+            <%= f.file_field :avatar %>
+            
             <%= f.label :name, "名前" %>
             <%= f.text_field :name, class: 'form-control' %>
             
