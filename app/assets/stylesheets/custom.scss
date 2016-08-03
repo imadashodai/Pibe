@@ -85,6 +85,7 @@ html{
     }
 }
 
+/*carousel*/
 .carousel {
     height: 500px;
      background-color: white;
@@ -115,8 +116,6 @@ html{
     
     }
 }
-
-
 
 .carousel-caption{
     margin-bottom: 20px;
@@ -208,11 +207,27 @@ input {
 
 /*teams*/
 .all_teams{
-    margin: 100px;
+    margin: 200px 0 0 50px;
     
-    img{
-        height: 200px;
-        width: 200px;
+    p{
+        font-size: 30px;
+    }
+    
+    .teams_list{
+        height: 100%;
+        width: 100%;
+        
+        li{
+            width: 200px;
+            float: left;
+            margin: 30px;
+        }
+        
+            img{
+                height: 200px;
+                width: 200px;
+            }
+        
     }
 }
 
@@ -222,6 +237,7 @@ input {
 
 /*newteam*/
 .new_team{
+
     img{
         height: 100px;
         width: 100px;

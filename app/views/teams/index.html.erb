@@ -1,11 +1,11 @@
 <div class="all_teams">
-    <h1>チーム一覧</h1>
+    <p>チーム一覧</p>
     <ul class="teams_list">
         <% @teams.each do |teams| %>
-        <li>
-        <%= teams.name %><br>
-        <%= image_tag teams.avatar.url %>
-        </li>
+            <li>
+                <%= link_to teams.name, team_path(teams) %><br>
+                <%= image_tag teams.avatar.url %>
+            </li>
         <% end %>
     </ul>
 </div>

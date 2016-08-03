@@ -10,6 +10,7 @@ class TeamsController < ApplicationController
         @team = Team.find(params[:id])
         @users = User.where(team_id: @team.id)
         @user = current_user
+        @team_users = @team.users
     end
     
     def new
