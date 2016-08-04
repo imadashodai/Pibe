@@ -5,7 +5,7 @@
     <ul>
         <% @team_users.each do |user| %>
             <li>
-                <%= image_tag user.avatar.url %>
+                <%= image_tag user.avatar.url, :alt => "noimage %>
                 <%= link_to user.name, user_path(user) %>
             </li>
         <% end %>

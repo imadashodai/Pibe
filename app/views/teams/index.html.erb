@@ -4,7 +4,7 @@
         <% @teams.each do |teams| %>
             <li>
                 <%= link_to teams.name, team_path(teams) %><br>
-                <%= image_tag teams.avatar.url %>
+                <%= image_tag teams.avatar.url, :alt => "noimage" %>
             </li>
         <% end %>
     </ul>
