@@ -131,7 +131,23 @@ html{
 
 /*signup*/
 .signup_form{
+    height: 100%;
     margin: 150px 100px 0 100px;
+    
+    .signup_label{
+        font-size: 30px;
+    }
+    
+    .row{
+        
+        .new_user{
+            
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
 }
 /* mixins, variables, etc. */
 
@@ -207,6 +223,7 @@ input {
 
 /*teams*/
 .all_teams{
+    height: 100%;
     margin: 200px 0 0 50px;
     
     p{
@@ -302,6 +319,24 @@ input {
         margin: 100px 100px 0 300px;
         img{
             height: 100px;
+        }
+    }
+}
+
+/*myteam*/
+.container{
+    height: 100%;
+
+    .myteam{
+        margin: 100px 100px 0 300px;
+        height: 100%;
+        .members{
+            height: 100%;
+        }
+        
+        img{
+            height: 100px;
+            width: 100px;
         }
     }
 }

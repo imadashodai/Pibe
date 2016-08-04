@@ -6,22 +6,12 @@
     </div>
     <div class="members">
         <ul>
-            <% @users.each do |user| %>
+            <% @team_users.each do |user| %>
                 <li>
-                    <%= image_tag @team.avatar.url %>
+                    <%= image_tag user.avatar.url %>
                     <%= link_to user.name, user_path(user) %>
                 </li>
             <% end %>
-            <div class="members">
-                <ul>
-                    <% @team_users.each do |user| %>
-                        <li>
-                            <%= image_tag user.avatar.url %>
-                            <%= user.name %>
-                        </li>
-                    <% end %>
-                <ul>
-            </div>
         <ul>
     </div>
 </div>
