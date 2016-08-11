@@ -6,7 +6,7 @@
         <div class="col-md-6 col-md-offset-3">
             <%= form_for(@team) do |f| %>
             
-            <%= f.label :avatar, "チーム画像" %>
+            <%= f.label :avatar, "チーム画像" %><br>
             <%= image_tag @team.avatar.url if @team.avatar %>
             <%= f.file_field :avatar %>
             

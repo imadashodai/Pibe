@@ -5,8 +5,8 @@
     <%= form_for(@team) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
     
+        <%= f.label :avatar, "チーム画像" %><br>
         <%= image_tag @team.avatar.url if @team.avatar %>
-        <%= f.label :avatar, "チーム画像" %>
         <%= f.file_field :avatar %>
         
         <%= f.label :name, "チーム名" %>

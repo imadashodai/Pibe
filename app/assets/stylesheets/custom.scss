@@ -135,6 +135,11 @@ html{
     height: 100%;
     margin: 150px 100px 0 100px;
     
+    h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
     .signup_label{
         font-size: 30px;
         margin: 0 250px 20px 250px;
@@ -201,11 +206,12 @@ input {
     
     .username{
         text-align: center;
-        font-size: 12px;
+        font-size: 30px;
     }
     
     .teamname{
         text-align: center;
+        font-size: 30px;
     }
     
     img{
@@ -226,8 +232,17 @@ input {
 .userinfo{
     margin: 100px 0 0 300px;
     
+    h1{
+        margin-bottom: 30px;
+    }
+    
     ul{
         list-style: none;
+        font-size: 30px;
+        
+        li{
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -279,12 +294,20 @@ input {
     margin: 100px 0 0 300px;
     font-size: 30px;
     
+    h1{
+        margin-bottom: 30px;
+    }
+    
     ul{
         list-style: none;
         
-        img{
-            height: 100px;
-            width: 100px;
+        li{
+            margin-bottom: 20px;
+            
+            img{
+                height: 100px;
+                width: 100px;
+            }
         }
     }
 }
@@ -334,7 +357,8 @@ input {
     .edit_team{
         margin: 100px 100px 0 300px;
         img{
-            height: 100px;
+            height: 200px;
+            width: 200px;
         }
     }
 }
