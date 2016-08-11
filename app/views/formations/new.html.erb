@@ -1,0 +1,11 @@
+<div class="formations">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <%#= form_for(@formation, url: { action:'upd_player1' },remote: true) do |f| %>
+            <%= form_for(@formation, url: { action:'new' },remote: true) do |f| %>
+            <%= f.collection_select( :player1_id, @user, :id, :name, {:id => 'formation_player1_id'}, html_options={:onchange =>'update_player1();'}) %>
+            <% end %>
+            <ul id="player1"></ul>
+        </div>
+    </div>
+</div>

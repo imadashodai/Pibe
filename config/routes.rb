@@ -6,10 +6,13 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+  post '/formations/playerimg1'
+  post '/formations/upd_player1', to: 'formations#upd_player1'
  
   resources :users
   resources :teams
   resources :my
+  resources :formations
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

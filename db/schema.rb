@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160731171729) do
+ActiveRecord::Schema.define(version: 20160804083109) do
+
+  create_table "formations", force: :cascade do |t|
+    t.integer  "player1_id"
+    t.integer  "player2_id"
+    t.integer  "player3_id"
+    t.integer  "player4_id"
+    t.integer  "player5_id"
+    t.integer  "player6_id"
+    t.integer  "player7_id"
+    t.integer  "player8_id"
+    t.integer  "player9_id"
+    t.integer  "player10_id"
+    t.integer  "player11_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "formations", ["player10_id"], name: "index_formations_on_player10_id"
+  add_index "formations", ["player11_id"], name: "index_formations_on_player11_id"
+  add_index "formations", ["player1_id"], name: "index_formations_on_player1_id"
+  add_index "formations", ["player2_id"], name: "index_formations_on_player2_id"
+  add_index "formations", ["player3_id"], name: "index_formations_on_player3_id"
+  add_index "formations", ["player4_id"], name: "index_formations_on_player4_id"
+  add_index "formations", ["player5_id"], name: "index_formations_on_player5_id"
+  add_index "formations", ["player6_id"], name: "index_formations_on_player6_id"
+  add_index "formations", ["player7_id"], name: "index_formations_on_player7_id"
+  add_index "formations", ["player8_id"], name: "index_formations_on_player8_id"
+  add_index "formations", ["player9_id"], name: "index_formations_on_player9_id"
 
   create_table "messages", force: :cascade do |t|
     t.integer  "user_id"

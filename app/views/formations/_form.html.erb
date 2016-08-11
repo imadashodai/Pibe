@@ -1,0 +1,4 @@
+<p>FW</p>
+<% @player1.each do |user| %>
+    <li><%= image_tag user.avatar.url, remote: true %></li>
+<% end %>

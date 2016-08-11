@@ -1,5 +1,6 @@
-<%= render "users/show" %>
-
+<div class="sidebar">
+    <%= render "users/show" %>
+</div>
 <div class="edit_area">
     <%= form_for(@user) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>

@@ -209,7 +209,7 @@ input {
     }
     
     img{
-    margin-top: 50px;
+    margin-top: 70px;
     height: 200px;
     width: 100%;
     }
@@ -217,10 +217,18 @@ input {
 
 .var_link{
     margin: 0;
+    
+    ul {
+        list-style: none;
+    }
 }
 
 .userinfo{
     margin: 100px 0 0 300px;
+    
+    ul{
+        list-style: none;
+    }
 }
 
 /*teams*/
@@ -230,11 +238,13 @@ input {
     
     p{
         font-size: 30px;
+        text-align: center;
     }
     
     .teams_list{
         height: 100%;
         width: 100%;
+        list-style: none;
         
         li{
             width: 200px;
@@ -269,9 +279,13 @@ input {
     margin: 100px 0 0 300px;
     font-size: 30px;
     
-    img{
-        height: 100px;
-        width: 100px;
+    ul{
+        list-style: none;
+        
+        img{
+            height: 100px;
+            width: 100px;
+        }
     }
 }
 
@@ -330,15 +344,19 @@ input {
     height: 100%;
 
     .myteam{
-        margin: 100px 100px 0 300px;
-        height: 100%;
+        
         .members{
             height: 100%;
         }
         
         img{
-            height: 100px;
-            width: 100px;
+            height: 200px;
+            width: 100%;
         }
     }
+}
+
+/*formation*/
+.formations{
+    margin: 200px;
 }
