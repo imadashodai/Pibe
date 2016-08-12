@@ -16,11 +16,11 @@
 //= require_tree .
 
 
-function update_player1() {
+function update_player1(form_id) {
   var element = "#formation_player1_id"
   $.ajax({
         url: "/formations/upd_player1", 
-        type: "POST", 
-        data: 'status=' + $(element).val()
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
    })
 }

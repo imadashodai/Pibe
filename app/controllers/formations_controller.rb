@@ -26,13 +26,12 @@ class FormationsController < ApplicationController
     end
     
     def upd_player1
+        
         @player1 = User.find(params[:status])
-        respond_to do |format|
-            if @player1.update(formation_params)
-              format.html
-              format.js
-            end
-        end
+        #puts "=================================================="
+        #puts "upd_player1======================================="
+
+        #render
     end
     
     private
