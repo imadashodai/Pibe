@@ -33,3 +33,12 @@ function update_player2(form_id) {
         data: { 'status': +$(element).val(), 'form_id': +form_id　}
    })
 }
+
+function update_player3(form_id) {
+  var element = "#formation_player3_id"
+  $.ajax({
+        url: "/formations/upd_player3", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}

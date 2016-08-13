@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   post '/formations/upd_player1', to: 'formations#upd_player1'
   post '/formations/upd_player2', to: 'formations#upd_player2'
+  post '/formations/upd_player3', to: 'formations#upd_player3'
  
   resources :users
   resources :teams

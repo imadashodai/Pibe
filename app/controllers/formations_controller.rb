@@ -33,9 +33,13 @@ class FormationsController < ApplicationController
         @player2 = User.find(params[:status])
     end
     
+    def upd_player3
+        @player3 = User.find(params[:status])
+    end
+    
     private
     def formation_params
-    params.require(:formation).permit(:player1_id, :player2_id)
+    params.require(:formation).permit(:player1_id, :player2_id, :player3_id)
     #, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id
     end
 end
