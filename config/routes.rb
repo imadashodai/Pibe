@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-  post '/formations/playerimg1'
   post '/formations/upd_player1', to: 'formations#upd_player1'
+  post '/formations/upd_player2', to: 'formations#upd_player2'
  
   resources :users
   resources :teams
