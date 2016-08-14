@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post '/formations/upd_player9', to: 'formations#upd_player9'
   post '/formations/upd_player10', to: 'formations#upd_player10'
   post '/formations/upd_player11', to: 'formations#upd_player11'
+  post '/formations/new'
 
   
  
