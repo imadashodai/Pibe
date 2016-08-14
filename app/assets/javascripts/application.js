@@ -51,3 +51,66 @@ function update_player4(form_id) {
         data: { 'status': +$(element).val(), 'form_id': +form_id　}
    })
 }
+
+function update_player5(form_id) {
+  var element = "#formation_player5_id"
+  $.ajax({
+        url: "/formations/upd_player5", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}
+
+function update_player6(form_id) {
+  var element = "#formation_player6_id"
+  $.ajax({
+        url: "/formations/upd_player6", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}
+
+function update_player7(form_id) {
+  var element = "#formation_player7_id"
+  $.ajax({
+        url: "/formations/upd_player7", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}
+
+function update_player8(form_id) {
+  var element = "#formation_player8_id"
+  $.ajax({
+        url: "/formations/upd_player8", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}
+
+function update_player9(form_id) {
+  var element = "#formation_player9_id"
+  $.ajax({
+        url: "/formations/upd_player9", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}
+
+function update_player10(form_id) {
+  var element = "#formation_player10_id"
+  $.ajax({
+        url: "/formations/upd_player10", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}
+
+function update_player11(form_id) {
+  var element = "#formation_player11_id"
+  $.ajax({
+        url: "/formations/upd_player11", 
+        type: "POST",
+        data: { 'status': +$(element).val(), 'form_id': +form_id　}
+   })
+}

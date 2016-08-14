@@ -41,9 +41,37 @@ class FormationsController < ApplicationController
         @player4 = User.find(params[:status])
     end
     
+    def upd_player5
+        @player5 = User.find(params[:status])
+    end
+    
+    def upd_player6
+        @player6 = User.find(params[:status])
+    end
+    
+    def upd_player7
+        @player7 = User.find(params[:status])
+    end
+    
+    def upd_player8
+        @player8 = User.find(params[:status])
+    end
+    
+    def upd_player9
+        @player9 = User.find(params[:status])
+    end
+    
+    def upd_player10
+        @player10 = User.find(params[:status])
+    end
+    
+    def upd_player11
+        @player11 = User.find(params[:status])
+    end
+    
     private
     def formation_params
-    params.require(:formation).permit(:player1_id, :player2_id, :player3_id)
+    params.require(:formation).permit(:player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id)
     #, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id
     end
 end

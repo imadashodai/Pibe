@@ -10,6 +10,13 @@ Rails.application.routes.draw do
   post '/formations/upd_player2', to: 'formations#upd_player2'
   post '/formations/upd_player3', to: 'formations#upd_player3'
   post '/formations/upd_player4', to: 'formations#upd_player4'
+  post '/formations/upd_player5', to: 'formations#upd_player5'
+  post '/formations/upd_player6', to: 'formations#upd_player6'
+  post '/formations/upd_player7', to: 'formations#upd_player7'
+  post '/formations/upd_player8', to: 'formations#upd_player8'
+  post '/formations/upd_player9', to: 'formations#upd_player9'
+  post '/formations/upd_player10', to: 'formations#upd_player10'
+  post '/formations/upd_player11', to: 'formations#upd_player11'
 
   
  
