@@ -146,8 +146,9 @@ html{
     }
     
     .row{
-        
+        height: 100%;
         .new_user{
+            height: 100%;
             
             img{
                 height: 100px;
@@ -231,6 +232,7 @@ input {
 
 .userinfo{
     margin: 100px 0 0 300px;
+    height: 100%;
     
     h1{
         margin-bottom: 30px;
@@ -246,8 +248,19 @@ input {
     }
 }
 
-.userinfo{
+.teammate{
     height: 100%;
+    margin: 100px 0 0 300px;
+    list-style: none;
+    
+    li{
+        float: left;
+        
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
 }
 
 /*teams*/
