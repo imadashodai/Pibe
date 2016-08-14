@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   post '/formations/upd_player1', to: 'formations#upd_player1'
   post '/formations/upd_player2', to: 'formations#upd_player2'
   post '/formations/upd_player3', to: 'formations#upd_player3'
+  post '/formations/upd_player4', to: 'formations#upd_player4'
+
+  
  
   resources :users
   resources :teams

@@ -15,6 +15,11 @@
             <%= f.collection_select( :player3_id, @user, :id, :name, {:id => 'formation_player3_id'}, html_options={:onchange =>'update_player3();'}) %>
             <% end %>
             <ul id="player3"></ul>
+            
+            <%= form_for(@formation, url: { action:'upd_player4' },remote: true) do |f| %>
+            <%= f.collection_select( :player4_id, @user, :id, :name, {:id => 'formation_player4_id'}, html_options={:onchange =>'update_player4();'}) %>
+            <% end %>
+            <ul id="player4"></ul>
         </div>
     </div>
 </div>
