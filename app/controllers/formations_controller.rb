@@ -52,8 +52,8 @@ class FormationsController < ApplicationController
         @formation = Formation.new(formation_params)
         respond_to do |format|
             if @formation.save
-              format.html
-              format.js
+              format.html {render :nothing => true}
+              format.js {render :nothing => true}
             end
         end
     end

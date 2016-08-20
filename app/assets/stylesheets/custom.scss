@@ -133,14 +133,10 @@ html{
 /*signup*/
 .signup_form{
     height: 100%;
-    margin: 150px 100px 0 100px;
-    
-    h1{
-        text-align: center;
-        margin-bottom: 30px;
-    }
+    margin: 100px 100px 0px 100px;
     
     .signup_label{
+        text-align: center;
         font-size: 30px;
         margin: 0 250px 20px 250px;
     }
@@ -400,4 +396,52 @@ input {
 /*formation*/
 .formations{
     margin: 200px;
+}
+
+/*formation show*/
+.formation{
+    height: 100%;
+    .player{
+        li{
+            list-style: none;
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+    
+    #player1{
+        margin: 100px 0 0 380px;
+    }
+    #player2{
+        margin: -130px 0 0 600px;
+    }
+    #player3{
+        margin: 20px 0 0 800px;
+    }
+    #player4{
+        margin: -100px 0 0 600px;
+    }
+    #player5{
+        margin: -130px 0 0 400px;
+    }
+    #player6{
+        margin: -130px 0 0 200px;
+    }
+    #player7{
+        margin: 20px 0 0 800px;
+    }
+    #player8{
+        margin: -100px 0 0 600px;
+    }
+    #player9{
+        margin: -130px 0 0 400px;
+    }
+    #player10{
+        margin: -130px 0 0 200px;
+    }
+    #player11{
+        margin: 20px 0 0 500px;
+    }
 }
