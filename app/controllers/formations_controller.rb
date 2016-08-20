@@ -44,8 +44,8 @@ class FormationsController < ApplicationController
     
     def new
         @formation = Formation.new
-        
-        @user = User.all
+        @team = Team.all
+        @user = User.where(team_id: @team)
     end
     
     def create
@@ -104,6 +104,6 @@ class FormationsController < ApplicationController
     
     private
     def formation_params
-    params.require(:formation).permit(:player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id)
+    params.require(:formation).permit(:player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id, :team_id_id)
     end
 end
