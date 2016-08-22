@@ -104,6 +104,6 @@ class FormationsController < ApplicationController
     
     private
     def formation_params
-    params.require(:formation).permit(:player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id, :team_id_id)
+    params.require(:formation).permit(:player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id, :name)
     end
 end

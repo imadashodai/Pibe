@@ -6,7 +6,6 @@ html{
     height: 100%;
 
     body{
-        height: 100%;
         width: 100%;
     }
 }
@@ -404,12 +403,70 @@ input {
 
 /*formation*/
 .formations{
-    margin: 200px;
+    margin-top: 70px;
+    
+    #formation_name{
+        width: 200px;
+    }
+    
+    #formation_player1_id{
+        width: 100px;
+    }
+    
+     #formation_player2_id{
+        width: 100px;
+    }
+    
+     #formation_player3_id{
+        width: 100px;
+    }
+    
+     #formation_player4_id{
+        width: 100px;
+    }
+    
+     #formation_player5_id{
+        width: 100px;
+    }
+    
+     #formation_player6_id{
+        width: 100px;
+    }
+    
+     #formation_player7_id{
+        width: 100px;
+    }
+    
+     #formation_player8_id{
+        width: 100px;
+    }
+    
+     #formation_player9_id{
+        width: 100px;
+    }
+    
+     #formation_player10_id{
+        width: 100px;
+    }
+    
+     #formation_player11_id{
+        width: 100px;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
 }
 
 /*formation show*/
 .formation{
     height: 100%;
+    margin-bottom: 50px;
+    .formation_name{
+        margin-top: 70px;
+        font-size: 30px;
+        text-align: center;
+    }
     .player{
         li{
             list-style: none;
