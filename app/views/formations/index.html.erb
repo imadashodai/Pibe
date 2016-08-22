@@ -1,3 +1,8 @@
-<% @user.each do |user| %>
-    <li><%= image_tag user.avatar.url %></li>
-<% end %>
+<div class="formation_list">
+    <% @formations.each do |formation| %>
+        <li><%= link_to "フォーメーション", formation_path(formation) %></li>
+    <% end %>
+</div>
+<div class="link_new">
+    <p><%= link_to "作成", new_formation_path %></p>
+</div>
