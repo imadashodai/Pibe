@@ -2,22 +2,23 @@
     <%= render "users/show" %>
     <%= render "users/sidevar" %>
 </div>
-<div class="userinfo">
-    <h1>プロフィール</h1>
-    <ul>
-        <li>名前:<%= @user.name%></li>
-        <li>年齢:<%= @user.age %></li>
-        <li>メールアドレス:<%= @user.email %></li>
-        <li>所属チーム:<%= @team.name %></li>
-    <ul>
-</div>
-<div class="teammate">
-    <h2>チームメイト</h2>
-    <% @team_users.each do |user| %>
-        <li>
-            <%= image_tag user.avatar.url, :alt => "noimage" %><br>
-            <%= link_to user.name, user_path(user) %>
-        </li>
-    <% end %>
-    
+<div class="userpage">
+    <div class="userinfo">
+        <h1>プロフィール</h1>
+        <ul>
+            <li>名前:<%= @user.name%></li>
+            <li>年齢:<%= @user.age %></li>
+            <li>メールアドレス:<%= @user.email %></li>
+            <li>所属チーム:<%= @team.name %></li>
+        <ul>
+    </div>
+    <div class="teammate">
+        <h2>チームメイト</h2>
+        <% @team_users.each do |user| %>
+            <li>
+                <%= image_tag user.avatar.url, :alt => "noimage" %><br>
+                <%= link_to user.name, user_path(user) %>
+            </li>
+        <% end %>
+    </div>
 </div>
