@@ -45,7 +45,8 @@ class FormationsController < ApplicationController
     def new
         @formation = Formation.new
         @team = Team.all
-        @user = User.where(team_id: @team)
+        @user = User.all
+        #@user = User.where(team_id: @team)
     end
     
     def create

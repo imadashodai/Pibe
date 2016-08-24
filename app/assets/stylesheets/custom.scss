@@ -132,7 +132,7 @@ html{
 /*signup*/
 .signup_form{
     height: 100%;
-    margin: 100px 100px 0px 100px;
+    margin: 100px 100px 50px 100px;
     
     .signup_label{
         text-align: center;
@@ -336,6 +336,10 @@ input {
 .login{
     margin: 200px;
     border-color: blue;
+    
+    h1{
+        text-align: center;
+    }
 }
 
 .alert{
@@ -414,59 +418,117 @@ input {
     }
 }
 
-/*formation*/
+/*formation new*/
 .formations{
-    margin: 70px 0 50px 0;
+    margin: 70px 0 50px 20px;
     
     #formation_name{
         width: 200px;
     }
     
-    #formation_player1_id{
+    .player1{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player1{
+            margin: -105px 0 0 430px;
+        }
     }
     
-     #formation_player2_id{
+    .player2{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player2{
+            margin: -140px 0 0 700px;
+        }
     }
     
-     #formation_player3_id{
+    .player3{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player3{
+            margin: -50px 0 0 200px ;
+        }
     }
     
-     #formation_player4_id{
+    .player4{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player4{
+            margin: -80px 0 0 430px;
+        }
     }
     
-     #formation_player5_id{
+    .player5{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player5{
+            margin: -110px 0 0 700px;
+        }
     }
     
-     #formation_player6_id{
+    .player6{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player6{
+            margin: -150px 0 0 1000px;
+        }
     }
     
-     #formation_player7_id{
+    .player7{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player7{
+            margin: -20px 0 0 200px;
+        }
     }
     
-     #formation_player8_id{
+    .player8{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player8{
+            margin: -50px 0 0 430px;
+        }
     }
     
-     #formation_player9_id{
+    .player9{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player9{
+            margin: -70px 0 0 700px;
+        }
     }
     
-     #formation_player10_id{
+    .player10{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player10{
+            margin: -120px 0 0 1000px;
+        }
     }
     
-     #formation_player11_id{
+    .player11{
         width: 100px;
+        height: 20px;
+        margin-bottom: 10px;
+        #player11{
+            margin: 0 0 0 590px;
+        }
     }
     img{
         height: 100px;
+        width: 100px;
+    }
+    .btn-large{
         width: 100px;
     }
 }

@@ -1,46 +1,55 @@
 <div class="formations">
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <%= form_for(@formation, url: { action:'create' },remote: true) do |f| %>
-            <%= f.label :name, "チーム名" %>
-            <%= f.text_field :name, class: 'form-control' %>
-            
+        <%= form_for(@formation, url: { action:'create' },remote: true) do |f| %>
+        <%= f.label :name, "チーム名" %>
+        <%= f.text_field :name, class: 'form-control' %>
+        
+        <div class="player1">
             <%= f.collection_select( :player1_id, @user, :id, :name, {:id => 'formation_player1_id'}, html_options={:onchange =>"update_player1();"}) %>
             <ul id="player1"></ul>
-            
+        </div>
+        <div class="player2">
             <%= f.collection_select( :player2_id, @user, :id, :name, {:id => 'formation_player2_id'}, html_options={:onchange =>"update_player2();"}) %>
             <ul id="player2"></ul>
-            
+        </div>
+        <div class="player3">
             <%= f.collection_select( :player3_id, @user, :id, :name, {:id => 'formation_player3_id'}, html_options={:onchange =>"update_player3();"}) %>
             <ul id="player3"></ul>
-            
+        </div>
+        <div class="player4">
             <%= f.collection_select( :player4_id, @user, :id, :name, {:id => 'formation_player4_id'}, html_options={:onchange =>"update_player4();"}) %>
             <ul id="player4"></ul>
-            
+        </div>
+        <div class="player5">
             <%= f.collection_select( :player5_id, @user, :id, :name, {:id => 'formation_player5_id'}, html_options={:onchange =>"update_player5();"}) %>
             <ul id="player5"></ul>
-            
+        </div>
+        <div class="player6">
             <%= f.collection_select( :player6_id, @user, :id, :name, {:id => 'formation_player6_id'}, html_options={:onchange =>"update_player6();"}) %>
             <ul id="player6"></ul>
-            
+        </div>
+        <div class="player7">
             <%= f.collection_select( :player7_id, @user, :id, :name, {:id => 'formation_player7_id'}, html_options={:onchange =>"update_player7();"}) %>
             <ul id="player7"></ul>
-            
+        </div>
+        <div class="player8">
             <%= f.collection_select( :player8_id, @user, :id, :name, {:id => 'formation_player8_id'}, html_options={:onchange =>"update_player8();"}) %>
             <ul id="player8"></ul>
-            
+        </div>
+        <div class="player9">
             <%= f.collection_select( :player9_id, @user, :id, :name, {:id => 'formation_player9_id'}, html_options={:onchange =>"update_player9();"}) %>
             <ul id="player9"></ul>
-            
+        </div>
+        <div class="player10">
             <%= f.collection_select( :player10_id, @user, :id, :name, {:id => 'formation_player10_id'}, html_options={:onchange =>"update_player10();"}) %>
             <ul id="player10"></ul>
-            
-            <%= f.collection_select( :player11_id, @user, :id, :name, {:id => 'formation_player11_id'}, html_options={:onchange =>"update_player11();"}) %>
-            <%= f.submit "登録", class: "btn-large btn-primary" %>
-            <ul id="player11"></ul>
-            <% end %>
-            
-            <p><%= link_to "リストへ", formations_path %></p>
         </div>
+        <div class="player11">
+            <%= f.collection_select( :player11_id, @user, :id, :name, {:id => 'formation_player11_id'}, html_options={:onchange =>"update_player11();"}) %>
+            <ul id="player11"></ul>
+        </div>
+        <%= f.submit "登録", class: "btn-large btn-primary" %>
+        <% end %>
+        <p><%= link_to "リストへ", formations_path %></p>
     </div>
 </div>
