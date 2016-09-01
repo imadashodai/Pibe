@@ -3,6 +3,7 @@ class FormationsController < ApplicationController
 
     def index
         @formations = Formation.all
+        @user = current_user
     end
     
     def show
@@ -46,16 +47,18 @@ class FormationsController < ApplicationController
         @formation = Formation.new
         @team = Team.all
         @user = User.all
-        #@user = User.where(team_id: @team)
     end
     
     def create
         @formation = Formation.new(formation_params)
+        
         respond_to do |format|
             if @formation.save
-              format.html {render :nothing => true}
-              format.js {render :nothing => true}
+                flash[:success] = '登録されました'
+                format.html {redirect_to @fromation}
+                format.js {render js: "window.location = '#{formation_path(@formation)}'"}
             end
+            
         end
     end
     

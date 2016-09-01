@@ -1,7 +1,7 @@
 <div class="formations">
     <div class="row">
         <%= form_for(@formation, url: { action:'create' },remote: true) do |f| %>
-        <%= f.label :name, "チーム名" %>
+        <%= f.label :name, "タイトル" %>
         <%= f.text_field :name, class: 'form-control' %>
         
         <div class="player1">

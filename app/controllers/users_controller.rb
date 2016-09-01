@@ -4,12 +4,13 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @team = @user.team
-    @team_users = @team.users
+    if @team != nil
+      @team_users = @team.users
+    end
   end
   
   def new
     @user = User.new
-    
     @teams = Team.all
   end
   

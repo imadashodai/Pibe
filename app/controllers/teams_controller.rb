@@ -15,6 +15,7 @@ class TeamsController < ApplicationController
     
     def new
         @team = Team.new
+        @user = current_user
     end
     
     def create

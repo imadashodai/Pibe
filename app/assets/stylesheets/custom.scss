@@ -138,6 +138,7 @@ html{
         text-align: center;
         font-size: 30px;
         margin: 0 250px 20px 250px;
+        font-family: cursive;
     }
     
     .row{
@@ -235,6 +236,8 @@ input {
         
         h1{
             margin-bottom: 30px;
+            font-family: cursive;
+            
         }
         
         ul{
@@ -243,6 +246,11 @@ input {
             
             li{
                 margin-bottom: 20px;
+                
+                .ptitle{
+                    font-family: cursive;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -252,6 +260,7 @@ input {
     height: 100%;
     margin: 50px 0 0 300px;
     list-style: none;
+    font-family: cursive;
     
     li{
         float: left;
@@ -272,6 +281,7 @@ input {
     p{
         font-size: 30px;
         text-align: center;
+        font-family: cursive;
     }
     
     .teams_list{
@@ -298,6 +308,14 @@ input {
 }
 
 /*newteam*/
+.signup_form{
+    
+    h1{
+        text-align: center;
+        font-family: cursive;
+        
+    }
+}
 .new_team{
 
     img{
@@ -311,6 +329,7 @@ input {
 .members{
     margin: 100px 0 0 300px;
     font-size: 30px;
+    font-family: cursive;
     
     h1{
         margin-bottom: 30px;
@@ -339,6 +358,7 @@ input {
     
     h1{
         text-align: center;
+        font-family: cursive;
     }
 }
 
@@ -411,8 +431,18 @@ input {
 
 /*formtion index*/
 .formation_list{
-    margin: 100px 0 0 50px;
+    margin: 100px 0 100px 50px;
+    text-align: center;
+    font-family: cursive;
     
+    li{
+        list-style: none;
+        font-size: 20px;
+    }
+}
+
+.link_new{
+    margin-left: 200px;
     li{
         list-style: none;
     }

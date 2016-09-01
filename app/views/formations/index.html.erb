@@ -1,8 +1,12 @@
+<div class="sidebar">
+    <%= render "users/show" %>
+</div>
 <div class="formation_list">
+    <h1>Formations</h1>
     <% @formations.each do |formation| %>
         <li><%= link_to formation.name, formation_path(formation) %></li>
     <% end %>
 </div>
 <div class="link_new">
-    <p><%= link_to "作成", new_formation_path %></p>
+    <li><%= link_to "作成", new_formation_path %></li>
 </div>

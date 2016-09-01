@@ -1,5 +1,5 @@
 <div class="all_teams">
-    <p>チーム一覧</p>
+    <p>Teams</p>
     <ul class="teams_list">
         <% @teams.each do |teams| %>
             <li>
@@ -7,5 +7,7 @@
                 <%= image_tag teams.avatar.url, :alt => "noimage" %>
             </li>
         <% end %>
+        <br>
+        <li><%= link_to "戻る", root_path %></li>
     </ul>
 </div>

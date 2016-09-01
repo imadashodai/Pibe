@@ -4,16 +4,16 @@
 </div>
 <div class="userpage">
     <div class="userinfo">
-        <h1>プロフィール</h1>
+        <h1>Profile</h1>
         <ul>
-            <li>名前:<%= @user.name%></li>
-            <li>年齢:<%= @user.age %></li>
-            <li>所属チーム:<%= @team.name %></li>
+            <li><div class="ptitle">Name:</div><%= @user.name%></li>
+            <li><div class="ptitle">Age:</div><%= @user.age %></li>
+            <li><div class="ptitle">My Team:</div><%= @team.name %></li>
         <ul>
     </div>
     <hr>
     <div class="teammate">
-        <h2>チームメイト</h2>
+        <h2>Teammate</h2>
         <% @team_users.each do |user| %>
             <li>
                 <%= image_tag user.avatar.url, :alt => "noimage" %><br>
