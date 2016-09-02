@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   get 'sessions/new'
 
   root to: 'static_pages#home'
