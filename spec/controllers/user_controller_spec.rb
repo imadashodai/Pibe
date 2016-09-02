@@ -4,14 +4,15 @@ require "model/user"
 
 #Getのテスト
 describe UsersController do
-    describe 'get' do
-=begin
-        it "render template new" do
-            get :new
-            expect(response).to render_template :new
+    describe 'show' do
+        it "assigns the requested user to @user" do
+            @user = create(:user)
+            get :show, id: user
+            expect(assigns(:user)).to eq user
         end
-=end
-        it "save success" do
+    end
+    describe 'create' do
+        it "save succcess" do
             expect{
                 post :create, user: attributes_for(:user)
             }.to change(User, :count).by(1)
