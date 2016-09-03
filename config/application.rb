@@ -29,5 +29,7 @@ module Pibe
       g.helper false
       g.test_framework false
     end
+    
+    config.active_record.raise_in_transactional_callbacks = true
   end
 end
