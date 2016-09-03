@@ -21,10 +21,11 @@ class TeamsController < ApplicationController
     def create
         @team = Team.new(team_params)
         if @team.save
-            flash[:success] = "create team!"
+            flash[:success] = "チーム作成完了!"
             redirect_to root_path
         else
-            redirect_to teams_path
+            flash[:notice] = "失敗しました。"
+            redirect_to team_path
         end
     end
 

@@ -106,6 +106,12 @@ class FormationsController < ApplicationController
         @player11 = User.find(params[:status])
     end
     
+    def destroy
+        @formation = Formation.find(params[:id])
+        @formation.destroy
+        redirect_to current_user
+    end
+    
     private
     def formation_params
     params.require(:formation).permit(:player1_id, :player2_id, :player3_id, :player4_id, :player5_id, :player6_id, :player7_id, :player8_id, :player9_id, :player10_id, :player11_id, :name)

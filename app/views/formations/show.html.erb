@@ -47,4 +47,5 @@
         <p><%= @player11.name %></p>
     </div>
     <p><%= link_to "リストへ", formations_path %></p>
+    <p><%= link_to "削除", @formation, method: :delete, data: { confirm: '削除してもよろしいですか？' }%></p>
 </div>
