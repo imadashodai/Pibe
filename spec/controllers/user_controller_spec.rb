@@ -30,7 +30,7 @@ describe UsersController do
         it "locates the requested @user" do
             user = FactoryGirl.create(:user)
             patch :update, id: user, user: FactoryGirl.attributes_for(:user)
-            expect(assigns(:user)).to eq([user])
+            expect(assigns(:user)).to eq @user
         end
         #it 'change user' do
         #    #@user = FactoryGirl.create(:user)
