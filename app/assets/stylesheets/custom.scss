@@ -452,6 +452,14 @@ input {
 .formations{
     margin: 70px 0 50px 20px;
     
+    .field{
+        img{
+            margin: 0 0 -500px 230px;
+            height: 500px;
+            width: 1000px;
+        }
+    }
+    
     #formation_name{
         width: 200px;
     }
@@ -564,55 +572,64 @@ input {
 }
 
 /*formation show*/
-.formation{
-    height: 100%;
-    margin-bottom: 50px;
-    .formation_name{
-        margin-top: 70px;
-        font-size: 30px;
-        text-align: center;
-    }
-    .player{
-        li{
-            list-style: none;
-            img{
-                height: 100px;
-                width: 100px;
-            }
+.formation_show{
+    .field{
+        img{
+            margin: 0 0 -1000px 150px;
+            height: 500px;
+            width: 1000px;
         }
     }
-    
-    #player1{
-        margin: 100px 0 0 380px;
-    }
-    #player2{
-        margin: -130px 0 0 600px;
-    }
-    #player3{
-        margin: 20px 0 0 800px;
-    }
-    #player4{
-        margin: -100px 0 0 600px;
-    }
-    #player5{
-        margin: -130px 0 0 400px;
-    }
-    #player6{
-        margin: -130px 0 0 200px;
-    }
-    #player7{
-        margin: 20px 0 0 800px;
-    }
-    #player8{
-        margin: -100px 0 0 600px;
-    }
-    #player9{
-        margin: -130px 0 0 400px;
-    }
-    #player10{
-        margin: -130px 0 0 200px;
-    }
-    #player11{
-        margin: 20px 0 0 500px;
+    .formation{
+        height: 100%;
+        margin-bottom: 50px;
+        .formation_name{
+            margin-top: 70px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .player{
+            li{
+                list-style: none;
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+        
+        #player1{
+            margin: 100px 0 0 430px;
+        }
+        #player2{
+            margin: -130px 0 0 650px;
+        }
+        #player3{
+            margin: 20px 0 0 850px;
+        }
+        #player4{
+            margin: -100px 0 0 650px;
+        }
+        #player5{
+            margin: -130px 0 0 450px;
+        }
+        #player6{
+            margin: -130px 0 0 250px;
+        }
+        #player7{
+            margin: 20px 0 0 850px;
+        }
+        #player8{
+            margin: -100px 0 0 650px;
+        }
+        #player9{
+            margin: -130px 0 0 450px;
+        }
+        #player10{
+            margin: -130px 0 0 250px;
+        }
+        #player11{
+            margin: 20px 0 0 550px;
+        }
     }
 }

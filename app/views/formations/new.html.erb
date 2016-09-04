@@ -1,5 +1,9 @@
 <div class="formations">
     <div class="row">
+        <!--ここにfield画像を挿入-->
+        <div class="field">
+            <%= image_tag("field2.png")%>
+        </div>
         <%= form_for(@formation, url: { action:'create' },remote: true) do |f| %>
         <%= f.label :name, "タイトル" %>
         <%= f.text_field :name, class: 'form-control' %>

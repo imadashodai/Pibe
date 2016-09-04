@@ -24,12 +24,19 @@ describe UsersController do
             post :create, user: FactoryGirl.attributes_for(:user, name: nil)
             expect(response).to render_template :new
         end
-        #updateのテスト
-        it 'change user' do
-            #@user = FactoryGirl.create(:user)
-            patch :update, id: @user, user: FactoryGirl.attributes_for(:user, name: "テスト")
-            user.reload
-            expect(user.name).to eq("テスト")
+    end
+    #updateのテスト
+    describe 'PATCH #update' do
+        it "locates the requested @user" do
+            user = FactoryGirl.create(:user)
+            patch :update, id: user, user: FactoryGirl.attributes_for(:user)
+            expect(assigns(:user)).to eq([user])
         end
+        #it 'change user' do
+        #    #@user = FactoryGirl.create(:user)
+        #    patch :update, id: @user, user: FactoryGirl.attributes_for(:user, name: "テスト")
+        #    user.reload
+        #    expect(user.name).to eq("テスト")
+        #end
     end
 end
