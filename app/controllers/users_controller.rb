@@ -38,11 +38,11 @@ class UsersController < ApplicationController
     end
   end
   
-  def destroy
-    @user = current_user
-    @user.destroy
-    redirect_to root_path
-  end
+  #def destroy
+  #  @user = current_user
+  #  @user.destroy
+  #  redirect_to root_path
+  #end
   
   def member
     @team = Team.find(params[:id])
