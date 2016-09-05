@@ -1,0 +1,14 @@
+<br><br><br><br><br>
+<p><%= @team.name %></p>
+<%= form_for (@meeting) do |f| %>
+    <% @meetings.each do |m| %>
+        <%= m.content %>
+    <% end %>
+    <div><%= f.hidden_field :user_id, :value => @user.id %></div>
+    <div><%= f.hidden_field :team_id, :value => @team.id %></div>
+    <p><%= @user.name %></p>
+    <%= f.label :content, "メッセージ"%>
+    <%= f.text_field :content, class: 'form-control'%>
+    
+    <%= f.submit "送信", class: "btn-large btn-primary"%>
+<% end %>

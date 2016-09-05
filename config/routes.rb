@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   post '/formations/upd_player9', to: 'formations#upd_player9'
   post '/formations/upd_player10', to: 'formations#upd_player10'
   post '/formations/upd_player11', to: 'formations#upd_player11'
-  post '/formations/new'
+  
 
   
  
@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   resources :teams
   resources :my
   resources :formations
+  resources :meetings
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
