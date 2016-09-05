@@ -5,6 +5,7 @@ class MeetingsController < ApplicationController
         @user = current_user
         @team = @user.team
         @meeting = Meeting.new
+        #チームのメッセージ一覧
         @meetings = @team.meetings
     end
     
@@ -19,6 +20,6 @@ class MeetingsController < ApplicationController
     
     private
     def meeting_params
-        params.require(:meeting).permit(:content, :user_id, :team_id)
+        params.require(:meeting).permit(:content, :user_id, :team_id, :name)
     end
 end

@@ -10,5 +10,5 @@ class User < ActiveRecord::Base
     
     belongs_to :team
     has_many :formations
-    has_many :meetings
+    belongs_to :meeting
 end
