@@ -14,25 +14,25 @@ html{
 .navbar-default{
     background-color: #006699;
     border-color: #006699;
-    
+
     .container{
         margin: 0 30px;
-        
+
         .apptitle{
             font-size: 30px;
             font-family: cursive;
             margin-top: 10px;
         }
-        
+
         .subtitle{
             margin: -25px 0 0 65px;
             color: white;
         }
-        
+
         .navbar-right{
             margin: -40px 60px 0 240px;
             color: white;
-            
+
         }
     }
 }
@@ -61,7 +61,7 @@ html{
 .pibe_img{
     width: 100%;
     height: 100%;
-    
+
     img {
     width: 100%;
     height: 100%;
@@ -78,7 +78,7 @@ html{
 .how_to{
     margin: 0px;
     height: 500px;
-    
+
     img{
         height: 100%;
         width: 100%;
@@ -104,16 +104,16 @@ html{
     width: 100%;
     margin: 0;
     bottom: 0;
-    
-    .item{ 
+
+    .item{
     height: 500px;
     width: 100%;
-    
+
         img{
             height: 100%;
             width: 100%;
         }
-    
+
     }
 }
 
@@ -133,19 +133,19 @@ html{
 .signup_form{
     height: 100%;
     margin: 100px 100px 50px 100px;
-    
+
     .signup_label{
         text-align: center;
         font-size: 30px;
         margin: 0 250px 20px 250px;
         font-family: cursive;
     }
-    
+
     .row{
         height: 100%;
         .new_user{
             height: 100%;
-            
+
             img{
                 height: 100px;
                 width: 100px;
@@ -200,17 +200,17 @@ input {
     width: 15%;
     margin: 0;
     background-color: #00CC99;
-    
+
     .username{
         text-align: center;
         font-size: 30px;
     }
-    
+
     .teamname{
         text-align: center;
         font-size: 30px;
     }
-    
+
     img{
     margin-top: 70px;
     height: 200px;
@@ -220,7 +220,7 @@ input {
 
 .var_link{
     margin: 0;
-    
+
     ul {
         list-style: none;
     }
@@ -229,24 +229,24 @@ input {
 .userpage{
     margin-bottom: 50px;
     height: 100%;
-    
+
     .userinfo{
         margin: 100px 0 0 300px;
         height: 100%;
-        
+
         h1{
             margin-bottom: 30px;
             font-family: cursive;
-            
+
         }
-        
+
         ul{
             list-style: none;
             font-size: 30px;
-            
+
             li{
                 margin-bottom: 20px;
-                
+
                 .ptitle{
                     font-family: cursive;
                     font-size: 20px;
@@ -261,11 +261,11 @@ input {
     margin: 50px 0 0 300px;
     list-style: none;
     font-family: cursive;
-    
+
     li{
         float: left;
         margin: 50px;
-        
+
         img{
             height: 100px;
             width: 100px;
@@ -277,29 +277,29 @@ input {
 .all_teams{
     height: 100%;
     margin: 200px 0 0 50px;
-    
+
     p{
         font-size: 30px;
         text-align: center;
         font-family: cursive;
     }
-    
+
     .teams_list{
         height: 100%;
         width: 100%;
         list-style: none;
-        
+
         li{
             width: 200px;
             float: left;
             margin: 30px;
         }
-        
+
             img{
                 height: 200px;
                 width: 200px;
             }
-        
+
     }
 }
 
@@ -309,11 +309,11 @@ input {
 
 /*newteam*/
 .signup_form{
-    
+
     h1{
         text-align: center;
         font-family: cursive;
-        
+
     }
 }
 .new_team{
@@ -322,7 +322,7 @@ input {
         height: 100px;
         width: 100px;
     }
-    
+
 }
 
 /*members*/
@@ -330,18 +330,18 @@ input {
     margin: 100px 0 0 300px;
     font-size: 30px;
     font-family: cursive;
-    
+
     h1{
         margin-bottom: 30px;
     }
-    
+
     ul{
         list-style: none;
-        
+
         li{
             margin: 50px;
             float: left;
-            
+
             img{
                 height: 100px;
                 width: 100px;
@@ -355,7 +355,7 @@ input {
 .login{
     margin: 200px;
     border-color: blue;
-    
+
     h1{
         text-align: center;
         font-family: cursive;
@@ -393,7 +393,7 @@ input {
     .edit_user{
         margin: 100px 100px 100px 300px;
         height: 100%;
-    
+
         img{
             height: 100px;
         }
@@ -412,20 +412,20 @@ input {
     height: 100%;
 
     .myteam{
-        
+
         .members{
             height: 100%;
-            
+
             li{
                margin: 50px;
-                
+
                 img{
                 height: 200px;
                 width: 100%;
                 }
             }
         }
-        
+
     }
 }
 
@@ -434,7 +434,7 @@ input {
     margin: 100px 0 100px 50px;
     text-align: center;
     font-family: cursive;
-    
+
     li{
         list-style: none;
         font-size: 20px;
@@ -451,7 +451,7 @@ input {
 /*formation new*/
 .formations{
     margin: 70px 0 50px 20px;
-    
+
     .field{
         img{
             margin: 0 0 -500px 230px;
@@ -459,11 +459,11 @@ input {
             width: 1000px;
         }
     }
-    
+
     #formation_name{
         width: 200px;
     }
-    
+
     .player1{
         width: 100px;
         height: 20px;
@@ -472,7 +472,7 @@ input {
             margin: -105px 0 0 430px;
         }
     }
-    
+
     .player2{
         width: 100px;
         height: 20px;
@@ -481,7 +481,7 @@ input {
             margin: -140px 0 0 700px;
         }
     }
-    
+
     .player3{
         width: 100px;
         height: 20px;
@@ -490,7 +490,7 @@ input {
             margin: -50px 0 0 200px ;
         }
     }
-    
+
     .player4{
         width: 100px;
         height: 20px;
@@ -499,7 +499,7 @@ input {
             margin: -80px 0 0 430px;
         }
     }
-    
+
     .player5{
         width: 100px;
         height: 20px;
@@ -508,7 +508,7 @@ input {
             margin: -110px 0 0 700px;
         }
     }
-    
+
     .player6{
         width: 100px;
         height: 20px;
@@ -517,7 +517,7 @@ input {
             margin: -150px 0 0 1000px;
         }
     }
-    
+
     .player7{
         width: 100px;
         height: 20px;
@@ -526,7 +526,7 @@ input {
             margin: -20px 0 0 200px;
         }
     }
-    
+
     .player8{
         width: 100px;
         height: 20px;
@@ -535,7 +535,7 @@ input {
             margin: -50px 0 0 430px;
         }
     }
-    
+
     .player9{
         width: 100px;
         height: 20px;
@@ -544,7 +544,7 @@ input {
             margin: -70px 0 0 700px;
         }
     }
-    
+
     .player10{
         width: 100px;
         height: 20px;
@@ -553,7 +553,7 @@ input {
             margin: -120px 0 0 1000px;
         }
     }
-    
+
     .player11{
         width: 100px;
         height: 20px;
@@ -597,7 +597,7 @@ input {
                 }
             }
         }
-        
+
         #player1{
             margin: 100px 0 0 430px;
         }
@@ -636,13 +636,22 @@ input {
 
 /*meeting*/
 .meeting{
-    margin: 80px;
+	height: 100%;
+    margin: 80px 80px 0 250px;
     .team_name{
         font-size: 30px;
         font-family: cursive;
     }
-    .panel-heading{
-        font-size: 25px;
-        font-family: cursive;
-    }
+	.panel{
+	    .panel-heading{
+	        font-size: 25px;
+	        font-family: cursive;
+	    }
+		.label_name{
+			font-size: 20px;
+		}
+		.content{
+			font-size: 20px;
+		}
+	}
 }

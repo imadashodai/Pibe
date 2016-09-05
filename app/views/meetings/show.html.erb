@@ -1,3 +1,7 @@
+<div class="sidebar">
+    <%= render "my/show" %>
+	<%= link_to "戻る", my_path %>
+</div>
 <div class="meeting">
     <div class="team_name">
         <p><%= @team.name %></p>
@@ -10,7 +14,9 @@
                     <%= m.name %>
                 </span>
             </div>
-            <%= m.content %><hr>
+			<div class="content">
+            	<%= m.content %><hr>
+			</div>
         <% end %>
     </div>
         <%= form_for (@meeting) do |f| %>
@@ -19,10 +25,10 @@
         <p><%= @user.name %></p>
         <%= f.label :content, "メッセージ"%>
         <%= f.text_field :content, class: 'form-control'%>
-        
+
         <%= f.label :name, "投稿名"%>
         <%= f.text_field :name, class: 'form-control'%>
-        
+
         <%= f.submit "送信", class: "btn-large btn-primary"%>
     <% end %>
 </div>
