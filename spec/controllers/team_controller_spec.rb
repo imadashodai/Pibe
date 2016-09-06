@@ -16,16 +16,15 @@ describe TeamsController do
     end
     #createのテスト
     describe 'POST #create' do
-		before do
-			@user = FactoryGirl.create(:user)
-		 	post '/login',{:email => @user.email, :password => @user.password}
-		end
+        before do
+            @user = FactoryGirl.create(:user)
+            post '/login',{:email => @user.email, :password => @user.password}
+        end
         it "save success" do
-			#loginが必要!
+            #loginが必要!
             expect{
                 post :create, team: FactoryGirl.attributes_for(:team)
             }.to change(Team, :count).by(1)
         end
     end
-
 end

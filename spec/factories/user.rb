@@ -5,7 +5,7 @@ FactoryGirl.define do
         name "hoge"
         email "hoge@email.com"
         password "hoge"
-		password_confirmation "hoge"
+        password_confirmation "hoge"
         age "hoge"
     end
 end
