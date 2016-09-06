@@ -22,13 +22,17 @@
         <%= form_for (@meeting) do |f| %>
         <div><%= f.hidden_field :user_id, :value => @user.id %></div>
         <div><%= f.hidden_field :team_id, :value => @team.id %></div>
-        <p><%= @user.name %></p>
-        <%= f.label :content, "メッセージ"%>
-        <%= f.text_field :content, class: 'form-control'%>
-
-        <%= f.label :name, "投稿名"%>
-        <%= f.text_field :name, class: 'form-control'%>
-
+		<div class="input_area">
+		    <p><%= @user.name %></p>
+		    <%= f.label :name, "投稿名"%>
+			<div class="name_area">
+		    	<%= f.text_field :name, class: 'form-control'%>
+			</div>
+			<%= f.label :content, "メッセージ"%>
+			<div class="content_area">
+		    	<%= f.text_field :content, class: 'form-control'%>
+			</div>
+		</div>
         <%= f.submit "送信", class: "btn-large btn-primary"%>
     <% end %>
 </div>

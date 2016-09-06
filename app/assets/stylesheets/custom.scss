@@ -430,6 +430,11 @@ input {
 }
 
 /*formtion index*/
+.sidebar{
+	.create_link{
+		margin-left: 35px;
+	}
+}
 .formation_list{
     margin: 100px 0 100px 50px;
     text-align: center;
@@ -652,6 +657,15 @@ input {
 		}
 		.content{
 			font-size: 20px;
+		}
+	}
+	.new_meeting{
+		.input_area{
+			.name_area{
+				.form-control{
+					width: 20%;
+				}
+			}
 		}
 	}
 }
