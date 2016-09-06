@@ -63,6 +63,16 @@ ActiveRecord::Schema.define(version: 20160905121910) do
   add_index "meetings", ["team_id"], name: "index_meetings_on_team_id"
   add_index "meetings", ["user_id"], name: "index_meetings_on_user_id"
 
+  create_table "messages", force: :cascade do |t|
+    t.integer  "user_id"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "messages", ["user_id", "created_at"], name: "index_messages_on_user_id_and_created_at"
+  add_index "messages", ["user_id"], name: "index_messages_on_user_id"
+
   create_table "teams", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
